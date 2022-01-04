@@ -5,15 +5,19 @@ int main()
   int n;
   cin>>n;
   int i=1;
-  char ch='A';
   while(i<=n)
   {
-    int j=1;
-    while(j<=n)
+    int space=i-1;
+    while(space)
     {
-      cout<<ch;
-      ch=ch+1;
-      j++;
+      cout<<" ";
+      space--;
+    }
+    int j=n-i+1;
+    while(j>0)
+    {
+      cout<<"*";
+      j--;
     }
     cout<<endl;
     i++;

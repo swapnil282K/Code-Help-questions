@@ -5,14 +5,13 @@ int main()
   int n;
   cin>>n;
   int i=1;
-  char ch='A';
   while(i<=n)
   {
     int j=1;
-    while(j<=n)
+    while(j<=i)
     {
+      char ch=i+j+'A'-2;
       cout<<ch;
-      ch=ch+1;
       j++;
     }
     cout<<endl;
