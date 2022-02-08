@@ -55,14 +55,10 @@ int main()
 {
   int arr[5]={7,5,4,3,2};
   int n=5;
-  for(int i=0;i<5;i++)
- {
-   cout<<arr[i]<<" ";
- }cout<<endl;
   mergesort(arr,0,n-1);
- for(int i=0;i<5;i++)
- {
+  for(int i=0;i<5;i++)
+  {
    cout<<arr[i]<<" ";
- }
+  }
  cout<<endl;
 }
